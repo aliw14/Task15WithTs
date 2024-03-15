@@ -15,3 +15,19 @@ console.log(replaceAllCountry);
 const searchText: number | null = text.search(/plain/g)
 console.log(`the word 'plain' starts at ${searchText}`)
 
+// let age:any;
+
+// age = '32';
+// age = 32;
+// console.log(age);
+
+
+let age: unknown;
+age = 5;
+if (typeof age === "string") {
+    age.toLowerCase()
+}
+if (typeof age === "number") {
+    age.toExponential()
+}
+console.log(age);
